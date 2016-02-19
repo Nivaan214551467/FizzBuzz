@@ -6,9 +6,12 @@ int main()
 	
 	using namespace std;
 	int num;
-	num = rand() % 20 + 1;
-	
-	if (num % 3 == 0 && num % 5 == 0)
+	num = rand() % 50 + 1;
+	if (num % 3 == 0 && num % 5 == 0 && num % 7 == 0)
+	{
+		cout << "FizzBuzzWoof" << endl;
+	}
+	else if (num % 3 == 0 && num % 5 == 0)
 	{
 		cout << "FizzBuzz" << endl;
 	}
@@ -20,11 +23,7 @@ int main()
 	{
 		cout << "Buzz" << endl;
 	}
-	else
-	{
-		cout << "Nothing" << endl;
-	}
-
+	
 	getchar();
 	
 }
